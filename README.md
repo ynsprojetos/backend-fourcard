@@ -1,4 +1,4 @@
-# Projeto app backend
+# Projeto backend-fourcard
 
 Base do projeto
 ```
@@ -64,5 +64,5 @@ Monitore a integridade do seu aplicativo usando o SmallRye Health
 - [x] Configurar conexão com banco de dados
 - [x] Configurar Swagger
 - [x] Criar módulo de usuário
-- [x] Criar módulo de permissão
 - [x] Configurar autenticação jwt
+- [ ] Criar módulo de permissão
