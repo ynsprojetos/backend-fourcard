@@ -9,6 +9,10 @@ repositories {
     mavenLocal()
 }
 
+tasks.named('quarkusDev') {
+    it.mustRunAfter(tasks.named('quarkusDev'))
+}
+
 task stage(dependsOn: ['build', 'quarkusDev'])
 
 dependencies {
