@@ -9,8 +9,6 @@ repositories {
     mavenLocal()
 }
 
-task stage(dependsOn: ['build'])
-
 dependencies {
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-rest-client'
