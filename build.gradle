@@ -10,6 +10,10 @@ repositories {
 
 task stage(dependsOn: ['build', 'quarkusDev'])
 
+tasks.named('build') {
+    it.mustRunAfter(tasks.named('quarkusDev'))
+}
+
 dependencies {
     implementation 'io.quarkus:quarkus-container-image-docker'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
