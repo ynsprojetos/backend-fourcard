@@ -19,6 +19,11 @@ public class CriarUsuarioDTO {
     @Length(min = 6)
     public String nome;
 
+    @Schema(description = "Cpf", example = "00000000000")
+    @NotNull
+    @Length(min = 11)
+    public String cpf;
+
     @Schema(description = "Sua senha", example = "suasenha")
     @NotNull
     @Length(min = 6)
