@@ -1,1 +1,1 @@
-web: PORT=$PORT java \$JAVA_OPTS -jar target/quarkus-app/quarkus-run.jar -p $PORT
+web: java -Dquarkus.http.port=$PORT $JAVA_OPTS -jar target/quarkus-app/quarkus-run.jar
