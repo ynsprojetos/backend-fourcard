@@ -19,6 +19,9 @@ public class UsuarioDTO implements Serializable {
     @Schema(description = "Nome", example = "Fulano de Tal")
     public String nome;
 
+    @Schema(description = "Cpf", example = "000000000-00")
+    public String cpf;
+
     @Schema(description = "Status", example = "true")
     public Boolean status;
 
@@ -38,6 +41,7 @@ public class UsuarioDTO implements Serializable {
         response.status = usuario.getStatus();
         response.updatedAt = usuario.getUpdatedAt();
         response.createdAt = usuario.getCreatedAt();
+        response.cpf = usuario.getCpf();
         return response;
     }
 }

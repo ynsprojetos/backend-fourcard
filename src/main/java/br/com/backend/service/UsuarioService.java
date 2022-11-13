@@ -25,7 +25,7 @@ public class UsuarioService {
     UsuarioRepository usuarioRepository;
 
     public List<UsuarioDTO> list() {
-        List<UsuarioDTO> list = usuarioRepository.findAlive()
+        List<UsuarioDTO> list = usuarioRepository.findAll()
                 .stream()
                 .map(UsuarioDTO::entityToDTO)
                 .collect(Collectors.toList());

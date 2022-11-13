@@ -19,6 +19,7 @@ public class Usuario implements Serializable {
     private String email;
     private String nome;
     private String senha;
+    private String cpf;
     private Boolean status;
 
     @CreationTimestamp
@@ -83,6 +84,14 @@ public class Usuario implements Serializable {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     @Override

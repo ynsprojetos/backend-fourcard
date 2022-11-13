@@ -4,6 +4,7 @@ import br.com.backend.model.dto.usuario.AtualizarUsuarioDTO;
 import br.com.backend.model.dto.usuario.CriarUsuarioDTO;
 import br.com.backend.model.dto.usuario.UsuarioDTO;
 import br.com.backend.service.UsuarioService;
+import io.quarkus.security.Authenticated;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
