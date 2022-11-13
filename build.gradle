@@ -8,11 +8,11 @@ repositories {
     mavenLocal()
 }
 
-task stage(dependsOn: ['build', 'quarkusDev'])
+task stage(dependsOn: ['build'])
 
-tasks.named('build') {
-    it.mustRunAfter(tasks.named('quarkusDev'))
-}
+// tasks.named('build') {
+//     it.mustRunAfter(tasks.named('quarkusDev'))
+// }
 
 dependencies {
     implementation 'io.quarkus:quarkus-container-image-docker'
