@@ -1,1 +1,1 @@
-web: PORT=$PORT java -Dquarkus.http.port=$PORT $JAVA_OPTS -jar target/quarkus-app/quarkus-run.jar --port $PORTqua
+worker: ./gradlew quarkusDev
