@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
 
-                    dockerapp = docker.build("quarkus", '-f src/Dockerfile ./src')
+                    dockerapp = docker.build("quarkus", '-f ./src/Dockerfile ./src')
                 }
                 echo 'Iniciando a pipeline'
             }
