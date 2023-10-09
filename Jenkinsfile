@@ -5,7 +5,7 @@ pipeline {
         stage ('Build Image'){
             steps {
                 script {
-                    dockerapp = docker.build("fourcard-image", "-f Dockerfile ./src")
+                    dockerapp = docker.build("fourcard-image", "-f Dockerfile .")
 
                 }
                 echo 'Iniciando a pipeline'
