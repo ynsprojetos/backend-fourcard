@@ -5,8 +5,8 @@ pipeline {
         stage ('Build Image'){
             steps {
                 script {
-                    dockerapp = docker.build("quarkus", " .")
-
+                    
+                    dockerapp = docker.build("quarkus", "-f ${WORKSPACE}/Dockerfile ${WORKSPACE}")
                 }
                 echo 'Iniciando a pipeline'
             }
